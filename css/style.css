@@ -18,11 +18,11 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0.75em 2em;
+    padding: 0 2em;
     position: fixed;
     background: white;
     left: 0; right: 0; top: 0;
-    height: 10vh;
+    height: 7.5dvh;
     z-index: 100;
 }
 
@@ -66,11 +66,11 @@ label .fa-xmark {
 }
 
 nav {
-    padding: 4em 2em;
-    height: 90vh;
+    padding: 2em;
+    height: 92.5dvh;
     width: 100%;
     position: fixed;
-    bottom: 0; left: -100vw;
+    top: 7.5dvh; left: -100vw;
     background: rgba(0, 0, 0, 0.95);
     color: aliceblue;
     text-align: center;
@@ -79,9 +79,9 @@ nav {
 
 nav a {
     margin: 1.75em 0 0;
-    padding: 0 0 0.75em;
-    width: 80%;
-    border-bottom: 0.1px solid rgba(240, 248, 255, 0.295);
+    padding: 0 0 1em;
+    width: 90%;
+    border-bottom: 0.1px solid rgba(240, 248, 255, 0.3);
     cursor: pointer;
     display: inline-block;
     font-weight: 600;

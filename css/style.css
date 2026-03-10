@@ -30,15 +30,12 @@ header {
     align-items: center;
     list-style: none;
     gap: 0.25em;
+    font-family: "Fugaz One", Arial, Helvetica, sans-serif;
 }
 
 #logo img {
     height: 24px;
     cursor: pointer;
-}
-
-#logo {
-    font-family: "Fugaz One", Arial, Helvetica, sans-serif;
 }
 
 #toggle {
@@ -69,9 +66,9 @@ label .fa-xmark {
 
 nav {
     padding: 2em;
-    height: 93vh;
+    height: 75vh;
     width: 100vw;
-    position: absolute;
+    position: fixed;
     bottom: 0; left: -100vw;
     background: rgba(0, 0, 0, 0.95);
     color: aliceblue;

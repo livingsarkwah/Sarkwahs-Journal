@@ -19,6 +19,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 0 2em;
+    border-bottom: 2px solid rgb(0, 0, 0);
     position: fixed;
     background: white;
     left: 0; right: 0; top: 0;
@@ -70,7 +71,7 @@ nav {
     height: 92.5dvh;
     width: 100%;
     position: fixed;
-    top: 7.5dvh; left: -100vw;
+    top: 7.5dvh; left: -300vw;
     background: rgba(0, 0, 0, 0.95);
     color: aliceblue;
     text-align: center;
@@ -112,6 +113,7 @@ nav a:hover, nav a:focus {
     flex-direction: column;
     justify-content: end;
     gap: 1em;
+    width: 100%;
 }
 
 #hero-section div {
@@ -211,6 +213,12 @@ footer {
         display: none;
     }
 
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
     #hero-section {
         padding: 4em;
         font-size: 1.25em;
@@ -226,23 +234,29 @@ footer {
 
 }
 
-@media (min-width: 850px) {
+@media (min-width: 950px) {
     #blogs {
-        display: grid;
-        grid-template: 1fr / repeat(2, 1fr);
-        gap: 1em;
+        max-width: 70%;
     }
 }
 
-@media (min-width: 1020px) {
+@media (max-width: 1100px) {
     #blogs {
-        display: grid;
-        grid-template: 1fr / repeat(3, 1fr);
-        gap: 1em;
+        max-width: 90%;
     }
 }
 
-
-.hidden {
-    display: none;
+#blogs {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
 }
+
+#blogs .blog:nth-child(n+4) {
+  display: none;
+}
+
+.blog .expanded {
+  display: block;
+}
+

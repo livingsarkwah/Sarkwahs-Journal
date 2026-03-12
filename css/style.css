@@ -102,28 +102,48 @@ nav a:hover, nav a:focus {
     overflow: hidden;
 }
 
+#hero-section, #hero-msg, #about-msg {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
 #hero-section {
     background: rgb(143, 76, 0) url(../images/article-image-hero.png);
     background-size: cover;
     height: 414px;
-    color: aliceblue;
-    padding: 2em;
     margin: 3em 0 0;
-    display: flex;
-    flex-direction: column;
+    padding: 2em;
+    color: aliceblue;
     justify-content: end;
-    gap: 1em;
+}
+
+#hero-msg, #about-msg {
+    margin: 4em 0 0;
+    padding: 1.5em;
+    gap: 2.2em;
+}
+
+#hero-msg img, #about-msg img{
     width: 100%;
 }
 
-#hero-section div {
+#hero-section div, #hero-msg div , #about-msg div{
     display: flex;
     flex-direction: column;
     gap: 1em;
+}
+
+#about-msg:nth-child(1) {
+    flex-direction: row;
 }
 
 h1 {
     font-size: 2rem;
+}
+
+#recent {
+    text-align: center;
 }
 
 #date {
@@ -131,12 +151,12 @@ h1 {
     font-weight: light;
 }
 
-#hero-section p{
+#hero-section p, #hero-msg p, #about-msg p {
     line-height: 1.5em;
 }
 
 #blogs {
-    margin: 1.5em;
+    margin: 0 1.5em 1.5em;
 }
 
 .blog {
@@ -256,7 +276,7 @@ footer {
   display: none;
 }
 
-.blog .expanded {
+#blogs .blog.expanded {
   display: block;
 }
 

@@ -124,8 +124,12 @@ nav a:hover, nav a:focus {
     gap: 2.2em;
 }
 
-#hero-msg img, #about-msg img{
+#hero-msg img {
     width: 100%;
+}
+
+#about-msg img{
+    max-width: 200px;
 }
 
 #hero-section div, #hero-msg div , #about-msg div{
@@ -134,8 +138,8 @@ nav a:hover, nav a:focus {
     gap: 1em;
 }
 
-#about-msg:nth-child(1) {
-    flex-direction: row;
+#about-msg div:nth-child(1) {
+    align-items: center;
 }
 
 h1 {
@@ -268,7 +272,7 @@ footer {
 
 #blogs {
     display: grid;
-    gap: 1.5rem;
+    gap: 1.5em;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
 }
 

@@ -130,6 +130,9 @@ nav a:hover, nav a:focus {
 
 #about-msg img{
     max-width: 200px;
+    border-radius: 50%;
+    border: 8px solid black;
+    align-self: center;
 }
 
 #hero-section div, #hero-msg div , #about-msg div{
@@ -138,9 +141,7 @@ nav a:hover, nav a:focus {
     gap: 1em;
 }
 
-#about-msg div:nth-child(1) {
-    align-items: center;
-}
+
 
 h1 {
     font-size: 2rem;
